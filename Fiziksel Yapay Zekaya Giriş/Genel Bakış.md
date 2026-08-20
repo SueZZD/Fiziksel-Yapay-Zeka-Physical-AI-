@@ -91,18 +91,27 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
+
 • Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.
+
 • Otomotiv standartlarındaki donanımların sınırları göz önüne alındığında, Microsoft'un Phi-4-mini-instruct gibi yerel modelleri; bellek ve işlem gücünün kısıtlı olduğu, gecikmeye son derece duyarlı (latency-bound) senaryolarda yüksek matematiksel ve mantıksal akıl yürütme kapasitesi sağlamak üzere tasarlanmıştır.
+
 • Araç içi deneyimde ise **Cerence Edge** sistemi (CaLLM adı verilen donanıma gömülü SLM mimarisi) ve Mercedes-Benz'in MBUX sistemi, bulut bağlantısı gerektirmeden araç içi sesli komut ve dinamik kontrolü yerel donanımda sağlar.
+
 • *FEV Group ve Microsoft İş Birliği:* Otomotiv sektöründe bulut bağımlılığını azaltmak amacıyla **NVIDIA DRIVE AGX** donanımı üzerinde yerel ve verimli yapay zeka modellerinin gömülü (embedded) kullanımı için stratejik projeler yürütülmektedir.
 
 **2. Çok Modlu Mimari: LLM, VLM ve VLA Arasındaki Geçiş**
+
 • Sadece metin işleme üzerine kurulu olan Büyük Dil Modellerinin (LLM) aksine, Görsel-Dil Modelleri (VLM) kamera verisi ile metni entegre ederek çok modlu yapıları anlamlandırır.
+
 • Görsel-Dil-Eylem (VLA) modelleri ise bu yapıyı bir adım öteye taşıyarak, algılanan çevresel verileri ve metin komutlarını otonom araçlar veya robotik sistemler için doğrudan fiziksel eylemlere dönüştürür.
+
 • Bu doğrultuda gelişen Robotik Temel Modelleri (RFM) hiyerarşik bir yapı kullanır: Sensör verisini işleyen algılama (perception) katmanı, mantıksal görevleri düzenleyen planlama (planning) katmanı ve istenen durum hedeflerine ulaşmak için düşük seviyeli motor komutlarını uygulayan kontrol (control) katmanı.
 
 **3. Otonom Araç Planlamasında Fiziksel Yapay Zeka ve End-to-End Kullanımı**
+
 • **Wayve Yaklaşımı:** Nesneleri etiketlemek veya haritalamak yerine doğrudan VLA mimarisi kullanır; kamera verisi ve sürüş kuralları modele girer, çıktı olarak doğrudan gaz, fren ve direksiyon torku elde edilir.
+
 • **Tesla ve Uçtan Uca (End-to-End) Sinir Ağları:** Geleneksel yüz binlerce satırlık kural tabanlı kodların yerini alan bu yaklaşım; sensörlerden (sol, orta, sağ kamera, CAN-bus üzerinden direksiyon açısı vb.) gelen ham veriyi tek bir derin sinir ağı üzerinden (örneğin NVIDIA DRIVE PX altyapılarıyla uyumlu şekilde) işleyerek doğrudan eyleme dönüşen sezgisel sürüş modelleri oluşturur.
 
 ---

@@ -11,8 +11,9 @@ Her yeni araştırmamı ve incelediğim makaleyi aşağıdaki modüler yapıda b
 
 | # | Rapor / Makale Konusu | Odak Alanı / Teknolojiler | Durum |
 | :--- | :--- | :--- | :--- |
-| **01** | **[Fiziksel Yapay Zeka ve Otonom Sistem Mimarileri](Genel Bakış.md)** | VLA, Helix 02, Akıllı Şebekeler, Phi-4-mini | ✅ Tamamlandı |
-| **02** | *(Gelecek Makale Konusu)* | *Örn: End-to-End Otonom Sürüş ve NMPC* | ⏳ Yakında |
-| **03** | *(Gelecek Makale Konusu)* | *Örn: İnsansı Robotlarda Sim-to-Real Aktarım* | ⏳ Planlanıyor |
+| **01** | **[Fiziksel Yapay Zeka ve Otonom Sistem Mimarileri](Genel Bakış.md)** | Fiziksel Yapay Zeka Üsüne Genel ve Sathi Bakış | ✅ Tamamlandı |
+| **02** | *(Gelecek Makale Konusu)* | *...* | ⏳ Yakında |
+| **03** | *(Gelecek Makale Konusu)* | *...* | ⏳ Yakında |
+| **04** | *(Gelecek Makale Konusu)* | *...* | ⏳ Planlanıyor |
 
 ---

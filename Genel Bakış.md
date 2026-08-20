@@ -47,7 +47,8 @@ Fiziksel yapay zeka sistemi tipik olarak üç ana yeteneğe sahiptir:
 
 <img width="291" height="262" alt="image" src="https://github.com/user-attachments/assets/56ce698f-475c-4456-b111-3b1a9ebc0967" />
 
-Endüstriyel ve toplumsal ölçekte dönüştürücü bir etkiye sahip olan Fiziksel Yapay Zeka; akıllı şehir altyapılarında, otonom araçlarda, lojistik operasyonlarında, akıllı fabrikalarda ve sağlık sektöründe (hassas cerrahi robotları ve hasta bakım asistanları) giderek daha fazla uygulama alanı bulmaktadır. Bununla birlikte, teknolojinin tam potansiyeline ulaşarak yaygınlaşabilmesi için simülasyon ortamları ile gerçek dünya arasındaki veri uyuşmazlıklarının (domain gap) aşılması, sensör hassasiyeti ve batarya verimliliği gibi donanımsal sorunların çözülmesi gerekmektedir. Ayrıca, operasyonel güvenliğin temin edilmesi, veri gizliliğinin korunması ve iş gücü piyasasındaki sosyo-ekonomik dönüşümün yönetilebilmesi adına, kapsamlı yasal düzenlemelerin ve insan-makine iş birliği standartlarının oluşturulması kritik bir zorunluluk olarak öne çıkmaktadır [1, 3]. 
+Endüstriyel ve toplumsal ölçekte dönüştürücü bir etkiye sahip olan Fiziksel Yapay Zeka; akıllı şehir altyapılarında, otonom araçlarda, lojistik operasyonlarında, akıllı fabrikalarda ve sağlık sektöründe (hassas cerrahi robotları ve hasta bakım asistanları) giderek daha fazla uygulama alanı bulmaktadır. Bununla birlikte, teknolojinin tam potansiyeline ulaşarak yaygınlaşabilmesi için simülasyon ortamları ile gerçek dünya arasındaki veri uyuşmazlıklarının (domain gap) aşılması, sensör hassasiyeti ve batarya verimliliği gibi donanımsal sorunların çözülmesi gerekmektedir. Ayrıca, operasyonel güvenliğin temin edilmesi, veri gizliliğinin korunması ve iş gücü piyasasındaki sosyo-ekonomik dönüşümün yönetilebilmesi adına, kapsamlı yasal düzenlemelerin ve insan-makine iş birliği standartlarının oluşturulması kritik bir zorunluluk olarak öne çıkmaktadır. 
+
 Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı alanları, hangi modeller aracılığı ile geliştirilip nasıl bir sistem dahilinde hizmete sunulduğunu, yani teknik yönünü, ve gerçekleştirilmesi karşısındaki zorlukları inceleyelim.
 
 ---
@@ -55,18 +56,18 @@ Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı
 ## 3. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)
 İnsansı robotlar, insan vücut yapısına merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
 
-<img width="374" height="450" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
+<img width="474" height="350" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
 
 Son zamanlarda geliştirilmiş bazı insansız robotları inceleyelim.
 Figure AI tarafından geliştirilen **Helix 02**, robotun algılama ve hareket yeteneklerini piksellerden torka dönüştüren hiyerarşik bir mimari kullanır[cite: 2]:
 1. **Sistem 2 (S2 - Yavaş / Semantik Katman):** Ortamı analiz eder, dil komutlarını anlar ve üst düzey görevi planlar[cite: 2].
 2. **Sistem 1 (S1 - 200 Hz Görsel-Motor Kontrol):** Kameralar ve dokunsal (tactile) sensör verilerini işleyerek eklem hedeflerini belirler[cite: 2].
-3. **Sistem 0 (S0 - 1 kHz Tüm Vücut Kontrolü):** Simülasyondan gerçeğe (sim-to-real) aktarılan 10 milyon parametreli model ile yürüyüş ve denge koordinasyonunu yönetir[cite: 2].
+3. **Sistem 0 (S0 - 1 kHz Tüm Vücut Kontrolü):** Simülasyondan gerçeğe (sim-to-real) aktarılan 10 milyon parametreli model ile yürüyüş ve denge koordinasyonunu yönetir.
 
 ---
 
 ## 4. Akıllı Şebekeler ve Dağıtık Fiziksel YZ
-Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" sistemlerinin en büyük örneğidir[cite: 2]. IoT donanımları ve sensör ağları aracılığıyla şebekeyi gerçek zamanlı izleyen bu sistemler; trafolara, akıllı şalterlere ve güç aktarım mekanizmalarına doğrudan müdahale ederek enerji arz-talep dengesini otonom olarak yönetir[cite: 2].
+Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" sistemlerinin en büyük örneğidir[cite: 2]. IoT donanımları ve sensör ağları aracılığıyla şebekeyi gerçek zamanlı izleyen bu sistemler; trafolara, akıllı şalterlere ve güç aktarım mekanizmalarına doğrudan müdahale ederek enerji arz-talep dengesini otonom olarak yönetir.
 
 ---
 
@@ -100,7 +101,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 
 ## 6. Uç Bilişim (Edge AI) ve Phi-4-mini-instruct Entegrasyonu
 Saniyenin onda biri gibi kritik gecikme sürelerini tolere edemeyen otonom sistemlerde bulut bağımlılığı ortadan kaldırılmalıdır[cite: 2]. 
-Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 Milyar parametreli bir SLM (Small Language Model) olmasına karşın sunduğu **128k token bağlam uzunluğu (context window)** sayesinde[cite: 2]; CAN-BUS log ağlarının incelenmesi, ROS 2 düğümlerinin analizi ve gömülü sistem optimizasyonlarında donanım sınırlarını zorlamadan bütüncül analiz imkanı tanır[cite: 2].
+Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 Milyar parametreli bir SLM (Small Language Model) olmasına karşın sunduğu **128k token bağlam uzunluğu (context window)** sayesinde; CAN-BUS log ağlarının incelenmesi, ROS 2 düğümlerinin analizi ve gömülü sistem optimizasyonlarında donanım sınırlarını zorlamadan bütüncül analiz imkanı tanır.
 
 <img width="475" height="142" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
 

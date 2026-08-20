@@ -67,17 +67,15 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 * **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır[cite: 2].
 * **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren uçtan uca (end-to-end) sistemlerdir[cite: 2].
 
-* KULLANILAN DİL MODELLERİ
-Otonom Sistemlerde VLA ve Uç Yapay Zeka (Edge AI) Yaklaşımları
-1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları
+**1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 •	Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.
 •	Otomotiv standartlarındaki donanımların sınırları göz önüne alındığında, Microsoft'un Phi-4-mini-instruct gibi yerel modelleri; bellek ve işlem gücünün kısıtlı olduğu, gecikmeye son derece duyarlı (latency-bound) senaryolarda yüksek matematiksel ve mantıksal akıl yürütme kapasitesi sağlamak üzere tasarlanmıştır.
 •	Araç içi deneyimde ise Mercedes-Benz'in MBUX sistemi, bulut bağlantısı ve gelişmiş ses kontrolünü birleştirerek, koltuk pozisyonlarından aracın sürüş modlarına kadar geniş bir araç dinamiği ağını duyarlı bilgisayar işlemcileriyle kontrol etmektedir.
-2. Çok Modlu Mimari: LLM, VLM ve VLA Arasındaki Geçiş
+**2. Çok Modlu Mimari: LLM, VLM ve VLA Arasındaki Geçiş**
 •	Sadece metin işleme üzerine kurulu olan Büyük Dil Modellerinin (LLM) aksine, Görsel-Dil Modelleri (VLM) kamera verisi ile metni entegre ederek çok modlu yapıları anlamlandırır.
 •	Görsel-Dil-Eylem (VLA) modelleri ise bu yapıyı bir adım öteye taşıyarak, algılanan çevresel verileri ve metin komutlarını otonom araçlar veya robotik sistemler için doğrudan fiziksel eylemlere dönüştürür.
 •	Bu doğrultuda gelişen Robotik Temel Modelleri (RFM) hiyerarşik bir yapı kullanır: Sensör verisini işleyen algılama (perception) katmanı, mantıksal görevleri düzenleyen planlama (planning) katmanı ve istenen durum hedeflerine ulaşmak için düşük seviyeli motor komutlarını uygulayan kontrol (control) katmanı.
-3. Otonom Araç Planlamasında Fiziksel Yapay Zeka Kullanımı
+**3. Otonom Araç Planlamasında Fiziksel Yapay Zeka Kullanımı**
 •	Fiziksel Yapay Zeka, temel dil ve görüş modellerinin robotik donanımlarla buluştuğu noktadır; açık kaynaklı VLA modelleri (örneğin OpenVLA) ile doğrudan eylem politikaları (ACT policy) geliştirilerek karmaşık görevler yerel donanımlarda eğitilebilmektedir.
 •	Otonom araç geliştirme süreçleri için tasarlanan NVIDIA Alpamayo 2 Super gibi VLA modelleri, çoklu kameralardan gelen 360 derecelik algı verilerini işleyerek aracın gelecekteki hedef yörüngelerini (trajectory) doğrudan üretebilir.
 •	VLA sistemleri sadece kontrol referansı üretmekle kalmaz; aynı zamanda "Neden-Sonuç Zinciri" (Chain-of-Causation) mekanizması ile şerit değiştirme, yavaşlama veya durma gibi yüksek seviyeli eylemlerin arkasındaki akıl yürütme süreçlerini geriye dönük olarak açıklayabilir.

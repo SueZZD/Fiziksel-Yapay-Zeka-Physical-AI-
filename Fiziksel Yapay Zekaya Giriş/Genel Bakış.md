@@ -37,14 +37,17 @@ Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığ�
 ---
 
 ## 2. Temel Mimari: Algılama, Zeka ve Eylem Döngüsü
-Önceden programlanmış katı komutlarla hareket eden geleneksel robotik sistemlerin aksine bu teknoloji; çevresel değişikliklere esnek bir biçimde yanıt verebilen ve deneyimledikçe kendi kendine öğrenebilen entegre bir sistem sunar. Çalışma prensibi insan biyolojisinden ilham alan sürekli bir döngüye dayanır: Sistem; kameralar, LiDAR ve dokunma sensörleriyle çevreyi algılar, büyük görsel-dil modelleri ve pekiştirmeli öğrenme (reinforcement learning) aracılığıyla elde ettiği veriyi yorumlayıp karar alır ve son olarak bu kararları mekanik donanımları üzerinden gerçek dünyada somut fiziksel eylemlere dönüştürür [3].
+Önceden programlanmış katı komutlarla hareket eden geleneksel robotik sistemlerin aksine bu teknoloji; çevresel değişikliklere esnek bir biçimde yanıt verebilen ve deneyimledikçe kendi kendine öğrenebilen entegre bir sistem sunar. Çalışma prensibi insan biyolojisinden ilham alan sürekli bir döngüye dayanır: Sistem; kameralar, LiDAR ve dokunma sensörleriyle çevreyi algılar, büyük görsel-dil modelleri ve pekiştirmeli öğrenme (reinforcement learning) aracılığıyla elde ettiği veriyi yorumlayıp karar alır ve son olarak bu kararları mekanik donanımları üzerinden gerçek dünyada somut fiziksel eylemlere dönüştürür.
 
 <img width="278" height="284" alt="image" src="https://github.com/user-attachments/assets/f95ca9c3-bdb8-449b-90d2-32ff998807ba" />
 
 Fiziksel yapay zeka sistemi tipik olarak üç ana yeteneğe sahiptir:
+
 • Kameralar, mikrofonlar, LiDAR veya diğer sensörler aracılığıyla çevreyi algılama
+
 • Olan biteni yorumlayan fiziksel yapay zeka modelleri kullanarak bilgileri işleme.
-• Robotlar, makineler veya otomatik sistemler aracılığıyla alınan kararlara göre hareket etmek [3].
+
+• Robotlar, makineler veya otomatik sistemler aracılığıyla alınan kararlara göre hareket etmek.
 
 <img width="291" height="262" alt="image" src="https://github.com/user-attachments/assets/56ce698f-475c-4456-b111-3b1a9ebc0967" />
 
@@ -60,7 +63,7 @@ Fiziksel yapay zeka, akıllı şebekelerden somutlaşmış yapay zekaya (Embodie
 ---
 
 ## 4. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02 ve Moxi 2.0)
-İnsansı robotlar, insan vücut yapısını merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
+İnsansı robotlar, insan vücut yapısını merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler.
 
 <img width="474" height="350" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
 
@@ -75,7 +78,7 @@ Son zamanlarda geliştirilmiş bazı insansı robotları ve sistemleri inceleyel
 ---
 
 ## 5. Akıllı Şebekeler ve Dağıtık Fiziksel YZ
-Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" sistemlerinin en büyük örneğidir[cite: 2]. IoT donanımları ve sensör ağları aracılığıyla şebekeyi gerçek zamanlı izleyen bu sistemler; trafolara, akıllı şalterlere ve güç aktarım mekanizmalarına doğrudan müdahale ederek enerji arz-talep dengesini otonom olarak yönetir.
+Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" sistemlerinin en büyük örneğidir. IoT donanımları ve sensör ağları aracılığıyla şebekeyi gerçek zamanlı izleyen bu sistemler; trafolara, akıllı şalterlere ve güç aktarım mekanizmalarına doğrudan müdahale ederek enerji arz-talep dengesini otonom olarak yönetir.
 
 ---
 
@@ -85,6 +88,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 * **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren sistemlerdir.
 
 <img width="700" height="375" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
+
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 • Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.

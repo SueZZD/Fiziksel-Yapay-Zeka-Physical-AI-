@@ -23,7 +23,7 @@
 Fiziksel yapay zeka; sensörler ve mekanik sistemler vasıtasıyla fiziksel dünyayla bütünleşik çalışan bir yapay zeka mimarisidir. Ne salt yazılımdan ne de sadece donanımdan ibaret olan bu hibrit yapı; çevresini algılar, elde ettiği verileri işleyerek düşünür ve buna uygun eyleme dönüşen kararlar alır. 
 Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığımız geleneksel yapay zeka ve robotik sistemlerle ufak bir kıyasını yaparak başlayalım:
 
-<img width="339" height="312" alt="image" src="https://github.com/user-attachments/assets/95798b17-6784-49d5-bba0-252cac89df48" />
+<img width="239" height="212" alt="image" src="https://github.com/user-attachments/assets/95798b17-6784-49d5-bba0-252cac89df48" />
 
 ### Geleneksel YZ vs. Fiziksel YZ
 | Kriter | Geleneksel Yapay Zeka | Fiziksel Yapay Zeka |
@@ -38,14 +38,14 @@ Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığ�
 ## 2. Temel Mimari: Algılama, Zeka ve Eylem Döngüsü
 Önceden programlanmış katı komutlarla hareket eden geleneksel robotik sistemlerin aksine bu teknoloji; çevresel değişikliklere esnek bir biçimde yanıt verebilen ve deneyimledikçe kendi kendine öğrenebilen entegre bir sistem sunar. Çalışma prensibi insan biyolojisinden ilham alan sürekli bir döngüye dayanır: Sistem; kameralar, LiDAR ve dokunma sensörleriyle çevreyi algılar, büyük görsel-dil modelleri ve pekiştirmeli öğrenme (reinforcement learning) aracılığıyla elde ettiği veriyi yorumlayıp karar alır ve son olarak bu kararları mekanik donanımları üzerinden gerçek dünyada somut fiziksel eylemlere dönüştürür [3].
 
-<img width="578" height="584" alt="image" src="https://github.com/user-attachments/assets/f95ca9c3-bdb8-449b-90d2-32ff998807ba" />
+<img width="278" height="284" alt="image" src="https://github.com/user-attachments/assets/f95ca9c3-bdb8-449b-90d2-32ff998807ba" />
 
 Fiziksel yapay zeka sistemi tipik olarak üç ana yeteneğe sahiptir:
 •	Kameralar, mikrofonlar, LiDAR veya diğer sensörler aracılığıyla çevreyi algılama
 •	Olan biteni yorumlayan fiziksel yapay zeka modelleri kullanarak bilgileri işleme.
 •	Robotlar, makineler veya otomatik sistemler aracılığıyla alınan kararlara göre hareket etmek [3].
 
-<img width="791" height="662" alt="image" src="https://github.com/user-attachments/assets/56ce698f-475c-4456-b111-3b1a9ebc0967" />
+<img width="291" height="262" alt="image" src="https://github.com/user-attachments/assets/56ce698f-475c-4456-b111-3b1a9ebc0967" />
 
 Endüstriyel ve toplumsal ölçekte dönüştürücü bir etkiye sahip olan Fiziksel Yapay Zeka; akıllı şehir altyapılarında, otonom araçlarda, lojistik operasyonlarında, akıllı fabrikalarda ve sağlık sektöründe (hassas cerrahi robotları ve hasta bakım asistanları) giderek daha fazla uygulama alanı bulmaktadır. Bununla birlikte, teknolojinin tam potansiyeline ulaşarak yaygınlaşabilmesi için simülasyon ortamları ile gerçek dünya arasındaki veri uyuşmazlıklarının (domain gap) aşılması, sensör hassasiyeti ve batarya verimliliği gibi donanımsal sorunların çözülmesi gerekmektedir. Ayrıca, operasyonel güvenliğin temin edilmesi, veri gizliliğinin korunması ve iş gücü piyasasındaki sosyo-ekonomik dönüşümün yönetilebilmesi adına, kapsamlı yasal düzenlemelerin ve insan-makine iş birliği standartlarının oluşturulması kritik bir zorunluluk olarak öne çıkmaktadır [1, 3]. 
 Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı alanları, hangi modeller aracılığı ile geliştirilip nasıl bir sistem dahilinde hizmete sunulduğunu, yani teknik yönünü, ve gerçekleştirilmesi karşısındaki zorlukları inceleyelim.
@@ -55,7 +55,7 @@ Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı
 ## 3. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)
 İnsansı robotlar, insan vücut yapısına merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
 
-<img width="674" height="450" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
+<img width="374" height="150" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
 
 Son zamanlarda geliştirilmiş bazı insansız robotları inceleyelim.
 Figure AI tarafından geliştirilen **Helix 02**, robotun algılama ve hareket yeteneklerini piksellerden torka dönüştüren hiyerarşik bir mimari kullanır[cite: 2]:
@@ -75,7 +75,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 * **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır.
 * **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren sistemlerdir.
 * 
-<img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
+<img width="200" height="125" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 •	Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.
@@ -102,7 +102,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 Saniyenin onda biri gibi kritik gecikme sürelerini tolere edemeyen otonom sistemlerde bulut bağımlılığı ortadan kaldırılmalıdır[cite: 2]. 
 Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 Milyar parametreli bir SLM (Small Language Model) olmasına karşın sunduğu **128k token bağlam uzunluğu (context window)** sayesinde[cite: 2]; CAN-BUS log ağlarının incelenmesi, ROS 2 düğümlerinin analizi ve gömülü sistem optimizasyonlarında donanım sınırlarını zorlamadan bütüncül analiz imkanı tanır[cite: 2].
 
-<img width="975" height="642" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
+<img width="475" height="142" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
 
 ---
 

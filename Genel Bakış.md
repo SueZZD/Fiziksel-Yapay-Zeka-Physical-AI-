@@ -103,7 +103,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 Saniyenin onda biri gibi kritik gecikme sürelerini tolere edemeyen otonom sistemlerde bulut bağımlılığı ortadan kaldırılmalıdır[cite: 2]. 
 Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 Milyar parametreli bir SLM (Small Language Model) olmasına karşın sunduğu **128k token bağlam uzunluğu (context window)** sayesinde; CAN-BUS log ağlarının incelenmesi, ROS 2 düğümlerinin analizi ve gömülü sistem optimizasyonlarında donanım sınırlarını zorlamadan bütüncül analiz imkanı tanır.
 
-<img width="475" height="142" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
+<img width="475" height="342" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
 
 ---
 

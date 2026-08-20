@@ -23,7 +23,7 @@
 Fiziksel yapay zeka; sensörler ve mekanik sistemler vasıtasıyla fiziksel dünyayla bütünleşik çalışan bir yapay zeka mimarisidir. Ne salt yazılımdan ne de sadece donanımdan ibaret olan bu hibrit yapı; çevresini algılar, elde ettiği verileri işleyerek düşünür ve buna uygun eyleme dönüşen kararlar alır. 
 Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığımız geleneksel yapay zeka ve robotik sistemlerle ufak bir kıyasını yaparak başlayalım:
 
-<img width="739" height="712" alt="image" src="https://github.com/user-attachments/assets/95798b17-6784-49d5-bba0-252cac89df48" />
+<img width="339" height="312" alt="image" src="https://github.com/user-attachments/assets/95798b17-6784-49d5-bba0-252cac89df48" />
 
 ### Geleneksel YZ vs. Fiziksel YZ
 | Kriter | Geleneksel Yapay Zeka | Fiziksel Yapay Zeka |

@@ -75,7 +75,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 * **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır.
 * **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren sistemlerdir.
 * 
-<img width="400" height="325" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
+<img width="600" height="325" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 •	Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.

@@ -1,4 +1,4 @@
-# Fiziksel-Yapay-Zeka-Physical-AI-
+
 # Physical AI (Fiziksel Yapay Zeka) ve Otonom Sistem Mimarileri
 
 <div align="center">

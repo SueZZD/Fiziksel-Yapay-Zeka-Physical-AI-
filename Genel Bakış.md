@@ -55,7 +55,7 @@ Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı
 ## 3. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)
 İnsansı robotlar, insan vücut yapısına merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
 
-<img width="374" height="150" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
+<img width="374" height="350" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
 
 Son zamanlarda geliştirilmiş bazı insansız robotları inceleyelim.
 Figure AI tarafından geliştirilen **Helix 02**, robotun algılama ve hareket yeteneklerini piksellerden torka dönüştüren hiyerarşik bir mimari kullanır[cite: 2]:
@@ -75,7 +75,7 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 * **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır.
 * **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren sistemlerdir.
 * 
-<img width="200" height="125" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
+<img width="400" height="325" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 •	Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.

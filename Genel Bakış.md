@@ -55,7 +55,7 @@ Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı
 ## 3. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)
 İnsansı robotlar, insan vücut yapısına merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
 
-<img width="374" height="350" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
+<img width="374" height="450" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
 
 Son zamanlarda geliştirilmiş bazı insansız robotları inceleyelim.
 Figure AI tarafından geliştirilen **Helix 02**, robotun algılama ve hareket yeteneklerini piksellerden torka dönüştüren hiyerarşik bir mimari kullanır[cite: 2]:

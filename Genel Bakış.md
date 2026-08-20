@@ -23,6 +23,8 @@
 Fiziksel yapay zeka; sensörler ve mekanik sistemler vasıtasıyla fiziksel dünyayla bütünleşik çalışan bir yapay zeka mimarisidir. Ne salt yazılımdan ne de sadece donanımdan ibaret olan bu hibrit yapı; çevresini algılar, elde ettiği verileri işleyerek düşünür ve buna uygun eyleme dönüşen kararlar alır. 
 Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığımız geleneksel yapay zeka ve robotik sistemlerle ufak bir kıyasını yaparak başlayalım:
 
+<img width="739" height="712" alt="image" src="https://github.com/user-attachments/assets/95798b17-6784-49d5-bba0-252cac89df48" />
+
 ### Geleneksel YZ vs. Fiziksel YZ
 | Kriter | Geleneksel Yapay Zeka | Fiziksel Yapay Zeka |
 | :--- | :--- | :--- |
@@ -35,6 +37,9 @@ Aklımızda daha iyi yer etmesi için önce günümüzde sıklıkla kullandığ�
 
 ## 2. Temel Mimari: Algılama, Zeka ve Eylem Döngüsü
 Önceden programlanmış katı komutlarla hareket eden geleneksel robotik sistemlerin aksine bu teknoloji; çevresel değişikliklere esnek bir biçimde yanıt verebilen ve deneyimledikçe kendi kendine öğrenebilen entegre bir sistem sunar. Çalışma prensibi insan biyolojisinden ilham alan sürekli bir döngüye dayanır: Sistem; kameralar, LiDAR ve dokunma sensörleriyle çevreyi algılar, büyük görsel-dil modelleri ve pekiştirmeli öğrenme (reinforcement learning) aracılığıyla elde ettiği veriyi yorumlayıp karar alır ve son olarak bu kararları mekanik donanımları üzerinden gerçek dünyada somut fiziksel eylemlere dönüştürür [3].
+
+<img width="578" height="584" alt="image" src="https://github.com/user-attachments/assets/f95ca9c3-bdb8-449b-90d2-32ff998807ba" />
+
 Fiziksel yapay zeka sistemi tipik olarak üç ana yeteneğe sahiptir:
 •	Kameralar, mikrofonlar, LiDAR veya diğer sensörler aracılığıyla çevreyi algılama
 •	Olan biteni yorumlayan fiziksel yapay zeka modelleri kullanarak bilgileri işleme.
@@ -49,6 +54,9 @@ Fiziksel yapay zekaya daha derinlemesine bir giriş yapalım ve kullanıldığı
 
 ## 3. İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)
 İnsansı robotlar, insan vücut yapısına merkeze alarak modellenmiş ve insanlarla beraber çalışarak verimliliği artırmak üzere tasarlanmış, genel amaçlı, iki ayaklı robotlardır. Nesne kavrayabilir, konteyner taşıyabilir, kutuları yükleyip boşaltabilir ve bunların dışında çeşitli görevleri öğrenme ve gerçekleştirme yeteneğine sahiptirler [5].
+
+<img width="674" height="450" alt="image" src="https://github.com/user-attachments/assets/465bd513-7d7c-4354-927e-d51682228062" />
+
 Son zamanlarda geliştirilmiş bazı insansız robotları inceleyelim.
 Figure AI tarafından geliştirilen **Helix 02**, robotun algılama ve hareket yeteneklerini piksellerden torka dönüştüren hiyerarşik bir mimari kullanır[cite: 2]:
 1. **Sistem 2 (S2 - Yavaş / Semantik Katman):** Ortamı analiz eder, dil komutlarını anlar ve üst düzey görevi planlar[cite: 2].
@@ -63,9 +71,11 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 ---
 
 ## 5. Modeller Evrimi: LLM, VLM ve VLA Mimarileri
-* **LLM (Büyük Dil Modelleri):** Yalnızca metinsel veri işler[cite: 2].
-* **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır[cite: 2].
-* **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren uçtan uca (end-to-end) sistemlerdir[cite: 2].
+* **LLM (Büyük Dil Modelleri):** Yalnızca metinsel veri işler.
+* **VLM (Görsel-Dil Modelleri):** Kamera verisi ile metni birleştirerek çevreyi anlamlandırır.
+* **VLA (Görsel-Dil-Eylem Modelleri):** Algılanan görsel veriyi ve komutları doğrudan donanım seviyesinde fiziksel eylemlere (direksiyon torku, frenleme) dönüştüren sistemlerdir.
+* 
+<img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/7dadcf83-f399-4391-8589-234830136ebc" />
 
 **1. Uç Bilişim (Edge AI) ve Yerleşik Sistem Kısıtlamaları**
 •	Bulut altyapısına olan bağımlılığı ortadan kaldıran Uç Yapay Zeka (Edge AI), otonom makinelerde anlık karar alma süreçleri için kritik olan düşük gecikmeli (low-latency) çıkarım ve gerçek zamanlı veri işleme imkanı sunar.
@@ -91,6 +101,8 @@ Akıllı şebekeler, "bedenlenmiş (embodied) olmayan Fiziksel Yapay Zeka" siste
 ## 6. Uç Bilişim (Edge AI) ve Phi-4-mini-instruct Entegrasyonu
 Saniyenin onda biri gibi kritik gecikme sürelerini tolere edemeyen otonom sistemlerde bulut bağımlılığı ortadan kaldırılmalıdır[cite: 2]. 
 Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 Milyar parametreli bir SLM (Small Language Model) olmasına karşın sunduğu **128k token bağlam uzunluğu (context window)** sayesinde[cite: 2]; CAN-BUS log ağlarının incelenmesi, ROS 2 düğümlerinin analizi ve gömülü sistem optimizasyonlarında donanım sınırlarını zorlamadan bütüncül analiz imkanı tanır[cite: 2].
+
+<img width="975" height="642" alt="image" src="https://github.com/user-attachments/assets/69d4bf2a-f502-4cf3-a649-f53f6151fba1" />
 
 ---
 

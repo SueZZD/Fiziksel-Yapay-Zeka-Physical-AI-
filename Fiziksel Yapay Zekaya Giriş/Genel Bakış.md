@@ -11,11 +11,12 @@
 ## 📌 İçindekiler
 1. [Giriş ve Kavramsal Çerçeve](#1-giriş-ve-kavramsal-çerçeve)
 2. [Temel Mimari: Algılama, Zeka ve Eylem Döngüsü](#2-temel-mimari-algılama-zeka-ve-eylem-döngüsü)
-3. [İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)](#3-insansı-robotlar-ve-gelişmiş-donanım-entegrasyonu-helix-02)
-4. [Akıllı Şebekeler ve Dağıtık Fiziksel YZ](#4-akıllı-şebekeler-ve-dağıtık-fiziksel-yz)
-5. [Modeller Evrimi: LLM, VLM ve VLA Mimarileri](#5-modeller-evrimi-llm-vlm-ve-vla-mimarileri)
-6. [Uç Bilişim (Edge AI) ve Phi-4-mini-instruct Entegrasyonu](#6-uç-bilişim-edge-ai-ve-phi-4-mini-instruct-entegrasyonu)
-7. [Kaynakça](#7-kaynakça)
+3. [Başlıca Fiziksel Yapay Zeka Ürün ve Sistemleri ve Bu Sistemlerde Kullanılan Modeller] (#3-başlıca-fiziksel-yapay-zeka-ürün-ve-sistemleri-ve-bu-sistemlerde-kullanılan-modeller)
+4. [İnsansı Robotlar ve Gelişmiş Donanım Entegrasyonu (Helix 02)](#4-insansı-robotlar-ve-gelişmiş-donanım-entegrasyonu-helix-02)
+5. [Akıllı Şebekeler ve Dağıtık Fiziksel YZ](#5-akıllı-şebekeler-ve-dağıtık-fiziksel-yz)
+6. [Modeller Evrimi: LLM, VLM ve VLA Mimarileri](#6-modeller-evrimi-llm-vlm-ve-vla-mimarileri)
+7. [Uç Bilişim (Edge AI) ve Phi-4-mini-instruct Entegrasyonu](#7-uç-bilişim-edge-ai-ve-phi-4-mini-instruct-entegrasyonu)
+8. [Kaynakça](#7-kaynakça)
 
 ---
 

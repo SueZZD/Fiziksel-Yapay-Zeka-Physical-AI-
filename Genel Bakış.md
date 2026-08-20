@@ -96,33 +96,62 @@ Araştırma kapsamında incelenen Microsoft **Phi-4-mini-instruct** modeli; 3.8 
 
 ## 7. Kaynakça
 *[1] NVIDIA, "Generative Physical AI," NVIDIA Glossary, 2026. URL: https://www.nvidia.com/en-us/glossary/generative-physical-ai/
+
 [2] Archetype AI, "What Is Physical AI," Archetype AI Guides, 2026. URL: https://www.archetypeai.io/guides/what-is-physical-ai
+
 [3] Liahnson, "What Is Physical AI: Understanding the Concept, Principles, Applications, and Future Outlook," Liahnson Insights, 2026. URL: https://liahnson.com/insights/what-is-physical-ai-understanding-the-concept-principles-applications-and-future-outlook/
+
 [4] Acrosser, "How Physical AI Differs From Robotics," Acrosser Technology, 2026. URL: https://www.acrosser.com/how-physical-ai-differs-from-robotics.html
+
 [5] NVIDIA, "Humanoid Robot," NVIDIA Glossary, 2026. URL: https://www.nvidia.com/en-us/glossary/humanoid-robot/
+
 [6] Boston Dynamics, "Atlas," Boston Dynamics Products, 2026. URL: https://bostondynamics.com/products/atlas/
+
 [7] Austin Business Journal, "Diligent Robotics Launches New Hospital Robot HQ," BizJournals, Aug. 2026. URL: https://www.bizjournals.com/austin/news/2026/08/17/diligent-robotics-launches-new-hospital-robot-hq.html
+
 [8] Diligent Robotics, "Moxi2: Physical AI Healthcare Robotics," LinkedIn Activity, 2026. URL: https://www.linkedin.com/posts/diligent-robotics_moxi2-physicalai-healthcarerobotics-activity-7495095236679905280-fVGD
+
 [9] Cerence, "Cerence Generative AI In-Car Experience," NVIDIA DGX Cloud Resources, 2026. URL: https://resources.nvidia.com/en-us-dgx-cloud/cerence-generative-ai-in-car-experience
+
 [10] FEV, "FEV Collaborates With Microsoft on Efficient AI Model Approach for In-Car Applications Built on NVIDIA," FEV Press Release, 2026. URL: https://www.fev.com/en/fev-collaborates-with-microsoft-on-efficient-ai-model-approach-for-in-car-applications-built-on-nvidia/
+
 [11] Wayve, "Wayve: Embodied AI for Autonomous Driving," Wayve.ai, 2026. URL: https://wayve.ai/
+
 [12] F. Pope, "Tesla FSD 12," Machine Learning Blog, 2026. URL: https://www.fredpope.com/blog/machine-learning/tesla-fsd-12
+
 [13] ResearchGate, "Robotic Foundation Models and Physical AI: Innovations, Applications, Ethical Challenges, and the Future of Generalized Robotics," ResearchGate, Publication 388178070, 2026. URL: https://www.researchgate.net/publication/388178070_Robotic_Foundation_Models_and_Physical_AI_Innovations_Applications_Ethical_Challenges_and_the_Future_of_Generalized_Robotics
+
 [14] Robotics Center, "Physical AI 2026 Guide," Robotics Center Blog, 2026. URL: https://www.roboticscenter.ai/blog/physical-ai-2026-guide
+
 [15] A. Pipal, "LLM, VLM, and VLA," Medium, 2026. URL: https://medium.com/@arpipal2/llm-vlm-and-vla-d758b91479eb
+
 [16] NVIDIA, "Reasoning Vision Language Action (rVLA)," NVIDIA Glossary, 2026. URL: https://www.nvidia.com/en-us/glossary/reasoning-vision-language-action/
+
 [17] IBM, "Edge AI," IBM Think Topics, 2026. URL: https://www.ibm.com/think/topics/edge-ai
+
 [18] Exxact Corp, "Vision-Language-Action (VLA) Models Powers Robotics," Exxact Corp Blog, 2026. URL: https://www.exxactcorp.com/blog/deep-learning/vision-language-action-vla-models-powers-robotics
+
 [19] Windows Forum, "FEV and Microsoft Bring Phi-4-Mini-Instruct Local AI to NVIDIA Drive AGX," Windows News, 2026. URL: https://windowsforum.com/windows-news.4/fev-and-microsoft-bring-phi-4-mini-instruct-local-ai-to-nvidia-drive-agx.436315/
+
 [20] Arabam.com, "MBUX Bilgi Eğlence Sistemi: Mercedes Kullanıcı Deneyimi," Arabam Blog, 2026. URL: https://www.arabam.com/blog/genel/mbux-bilgi-eglence-sistemi-mercedes-kullanici-deneyimi/
+
 [21] Microsoft, "Phi-4-Mini-Instruct," Hugging Face, 2026. URL: https://huggingface.co/microsoft/Phi-4-mini-instruct
+
 [22] NVIDIA, "Deep Learning for Self-Driving Cars," NVIDIA Developer Blog, 2026. URL: https://developer.nvidia.com/blog/deep-learning-self-driving-cars/
+
 [23] Windows Forum, "FEV and Microsoft Bring Phi-4-Mini-Instruct Local AI to NVIDIA Drive AGX," Windows News, 2026. URL: https://windowsforum.com/windows-news.4/fev-and-microsoft-bring-phi-4-mini-instruct-local-ai-to-nvidia-drive-agx.436315/
+
 [24] arXiv, "Preprint 2101.02082," arXiv preprint, arXiv:2101.02082, 2021. URL: https://arxiv.org/abs/2101.02082
-[25] Digital Divide Data, "In-Cabin AI: Why Driver Condition & Behavior Annotation Matters," DDD Blog, 2026. URL: https://www.digitaldividedata.com/blog/in-cabin-ai-why-driver-condition-behavior-annotation-matters
+
+[25] Digital Divide Data, "In-Cabin AI: Why Driver Condition & Behavior Annotation Matters," DDD Blog, 2026. URL:https://www.digitaldividedata.com/blog/in-cabin-ai-why-driver-condition-behavior-annotation-matters
+
 [26] InCabin, "AI Systems: Real-Time Safety at the Edge," InCabin Blog, 2026. URL: https://incabin.com/blog/ai-systems-real-time-safety-at-the-edge/
+
 [27] BMW Group, "Press Release: T0455864EN," BMW Group PressClub, 2026. URL: https://www.press.bmwgroup.com/global/article/detail/T0455864EN/
+
 [28] BMW Group, "Press Release: T0458778EN," BMW Group PressClub, 2026. URL: https://www.press.bmwgroup.com/global/article/detail/T0458778EN/
+
 [29] Microsoft Azure, "Empowering Innovation: The Next Generation of the Phi Family," Azure Blog, 2026. URL: https://azure.microsoft.com/en-us/blog/empowering-innovation-the-next-generation-of-the-phi-family/
+
 [30] Strategy& (PwC), "Physical AI," PwC Industries TMT, 2026. URL: https://www.strategyand.pwc.com/de/en/industries/telecommunication-media-and-technology/physical-ai.html
 *

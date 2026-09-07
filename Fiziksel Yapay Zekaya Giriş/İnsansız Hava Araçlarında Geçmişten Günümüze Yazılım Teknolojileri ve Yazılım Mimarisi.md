@@ -35,10 +35,6 @@ Bununla birlikte, savunma sanayisi gibi otonom sistemlerden faydalanan kritik al
 ## 2. VLA ve Reasoning VLA Mimarileri
 VLA (vision-language-action), görsel algıyı, dil anlama yeteneğini ve eyleme geçmeyi birleştiren bir yapay zeka modelidir[cite: 2]. Bu yapılar, üst seviye görsel-dilsel muhakeme yeteneğini hassas eylem yörüngelerine dönüştürerek hareket planlama ve kontrol süreçlerine esneklik ile uygulanabilirlik kazandırır[cite: 3].
 
-<p align="center">
-  <img width="700" alt="COMPASS 7 Katmanlı Mimari ve Drone Sistemleri" src="../assets/drone-sema-2.png">
-</p>
-
 VLA'lerin otonom sürüşte yaygınlaşması; çok adımlı çıkarım süreçlerinin gerçek zamanlı yüksek frekanslı kontrolü kısıtlaması, farklı araç ve senaryolara genelleme yapabilecek geniş ölçekli veri eksikliği ve mevcut ince ayar stratejilerinin yetersizliği nedeniyle sekteye uğramaktadır. Bu noktada devreye Reasoning VLA yani akıl yürütme temelli VLA modelleri devreye girer[cite: 3].
 
 Reasoning VLA, görsel algıyı, dil anlama yeteneğini ve eylem planlamayı adım adım akıl yürütmeyle bütünleştiren birleşik bir yapay zeka modelidir[cite: 1, 3]. Yeni nesil akıl yürüten (Reasoning/Agentic) drone yapay zeka modelleri, geleneksel otonom uçuş algoritmalarından ve reaktif VLA modellerinden köklü bir mimari farkla ayrılır. Bu sistemler, OpenAI'ın o1/o3 veya DeepSeek-R1 gibi modellerde görülen Chain-of-Thought (Düşünce Zinciri) mantığını fiziksel dünyaya uyarlayan Embodied CoT (Fizikselleştirilmiş Akıl Yürütme) mimarisine dayanır. 
@@ -113,9 +109,6 @@ Bu tür yüksek serbestlik dereceli ve hızlı sistemlerde, standart otoregresif
 
 Ayrıca bu alandaki güncel yaklaşımlar, farklı kinematik yapılardan ve sensör konfigürasyonlarından gelen verilerle ortak eğitim (cross-embodiment co-training) yapmanın model genellemesini ciddi ölçüde artırdığını göstermektedir. Üst seviyede semantik muhakeme ve rota planlaması yürüten "yavaş" bir görsel-dil omurgası ile alt seviyede milisaniyelik dinamik kararları icra eden "hızlı" bir politika başlığından oluşan iki kademeli (dual-system) mimariler; İHA'ların zorlu rüzgâr/uçuş dinamiklerinde güvenli, sağlam ve uyarlanabilir bir fiziksel yapay zekâ altyapısı sunmaktadır.
 
-<p align="center">
-  <img width="700" alt="myvla Pipeline ve Training Process Şeması" src="../assets/drone-sema-3.png">
-</p>
 
 ### İnsansız Hava Araçlarında (UAV / Drone) VLA ve Öğrenilmiş Kontrol Sistemleri
 Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\text{ Hz}$) ve dış mekânın 3 boyutlu dinamik koşulları altında uçuş komutları ve görev planlaması üretmektedir:
@@ -123,10 +116,6 @@ Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\t
 * **Uçtan Uca Görsel-Dilsel Navigasyon (UAV-VLA, CognitiveDrone, RaceVLA):** UAV-VLA, uydu ve hava görüntülerini işleyerek doğal dilden 100 bin uçuşluk görev planı (irtifa, rota, sensör ayarları) üretebilmektedir. CognitiveDrone, birinci şahıs kamerasından doğrudan 4B eylem ($x, y, z, \text{yaw}$) üretirken; Düşünce Zinciri (CoT) muhakemesi eklenen R1 varyantıyla karmaşık bilişsel görevleri çözer. RaceVLA ise uzman pilot verilerini "agresif apeks dönüşü" gibi sözel komutlarla eşleyerek insan benzeri yarış yörüngeleri oluşturur.
 * **Hava Manipülasyonu ve Çift Kol Entegrasyonu (DroneVLA, AIR-VLA, Flying Hand):** Hava araçlarının yalnızca uçmayıp uçarken manipülatörle nesne yakalamasını sağlayan DroneVLA, açık sözlüklü nesne tespiti (Grounding DINO) ile görsel servoyu birleştirir. AIR-VLA, hava manipülasyonu için 3000 gösterimlik güvenlik kısıtlı bir test ortamı sunar. Flying Hand ise tam tahrikli bir hekzarotor üzerine 4-DoF kol yerleştirerek, manipülasyonda kullanılan ACT (Action Chunking with Transformers) yönteminin doğrudan hava araçlarına aktarılabileceğini kanıtlamıştır. Ayrıca çift kollu hava manipülasyonu (Aerial Bimanual Harvesting), avokado hasadı gibi görevlerde bir kolun dalı sabitleyip diğer kolun meyveyi kopardığı lider-takipçi stratejisini başarıyla uygulamaktadır.
 * **Düşük Gecikmeli Görev Planlama (TypeFly, AeroAgent):** LLM'lerin serbest kod üretimindeki gecikmeyi azaltmak için TypeFly, modeli MiniSpec adı verilen yalın bir drone komut dilinde çıktı üretmeye kısıtlayarak planlama gecikmesini 500 ms'nin altına indirmiştir.
-
-<p align="center">
-  <img width="700" alt="Multi-Modal Sensing ve SLAM Navigasyon Akışı" src="../assets/drone-sema-4.png">
-</p>
 
 #### Model Gruplarının Karşılaştırması
 

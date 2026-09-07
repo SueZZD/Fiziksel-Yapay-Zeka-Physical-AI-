@@ -23,7 +23,6 @@ Geçmişten günümüze insansız hava araçlarında (İHA) kullanılan yazılı
 * **Perception Katmanı:** Sensörler aracılığıyla çevreyi algılar ve ham veriyi işleyerek kullanılabilir hale getirir. Örneğin, LiDAR sensöründen gelen ham nokta bulutlarının (point cloud) kümelenmesi (clustering) ve nesnelerin anlamlandırılması bu katmanda yer alır. Derin öğrenmeye dayalı görüntü işleme ve bilgisayarlı görü teknolojilerinin yer aldığı, yapay zekanın otonom sistemlere dahil olduğu ilk katmandır.
 * **Kontrol Katmanı:** Üst düzey otonomi yazılımı ile fiziksel donanım arasındaki köprü görevini üstlenerek aracın dinamik hareketlerini yönetir. Kontrol katmanının başarısı doğrudan SLAM katmanına bağlıdır; konumu yeterli doğrulukla tespit edilemeyen bir cihazı kontrol etmek mümkün değildir. SLAM katmanının durum kestirimi (state estimation) ve EKF (Genişletilmiş Kalman Filtresi) gibi algoritmalarla elde ettiği bilgiler üzerine kurulan kontrol katmanı; pure pursuit, PID, MPC ve NMPC gibi ağır matematiksel algoritmalarla cihazı yönetir.
 
-<img width="600" alt="Klasik Otonom Mimarisi" src="https://github.com/user-attachments/assets/cls-arch-placeholder" />
 
 Klasik otonomiden bu yana yaşanan en büyük değişim, önce sadece perception katmanına yapay zekanın dahil olması, ardından ise ara katmanların da yapay zekayla donatılmasıdır. Savunma sanayisi gibi kritik alanlarda en ufak bir halüsinasyon veya model hatası küresel sorunlara yol açabileceğinden "sağlam matematik" ve klasik yöntemler ağırlığını korusa da; birçok alanda yapay zeka otonomi mutfağının vazgeçilmezi haline gelmiştir.
 
@@ -32,10 +31,9 @@ Klasik otonomiden bu yana yaşanan en büyük değişim, önce sadece perception
 ## 2. VLA (Vision-Language-Action) Mimarileri ve Çalışma Prensibi
 Görsel veriyi ve doğal dili işleyip doğrudan eyleme dönüştüren **VLA (Vision-Language-Action)** mimarisi, fiziksel donanıma doğrudan temas etmesi ve dinamik karar mekanizmaları sunması nedeniyle modern otonomi sistemlerinin merkezinde yer alır.
 
-* **VLA Tanımı:** Görsel algıyı, dil anlama yeteneğini ve eyleme geçmeyi birleştiren bir yapay zeka modelidir[cite: 1].
-* Bu yapılar, üst seviye görsel-dilsel muhakeme yeteneğini hassas eylem yörüngelerine dönüştürerek hareket planlama ve kontrol süreçlerine esneklik kazandırır[cite: 2].
+* **VLA Tanımı:** Görsel algıyı, dil anlama yeteneğini ve eyleme geçmeyi birleştiren bir yapay zeka modelidir[cite: 2].
+* Bu yapılar, üst seviye görsel-dilsel muhakeme yeteneğini hassas eylem yörüngelerine dönüştürerek hareket planlama ve kontrol süreçlerine esneklik kazandırır[cite: 3].
 
-<img width="700" alt="COMPASS Mimari ve Katmanlar" src="https://github.com/user-attachments/assets/vla-arch-placeholder" />
 
 VLA'lerin otonom sistemlerde yaygınlaşması; çok adımlı çıkarım süreçlerinin gerçek zamanlı yüksek frekanslı kontrolü kısıtlaması, farklı araç ve senaryolara genelleme yapabilecek geniş ölçekli veri eksikliği gibi etkenler nedeniyle **Reasoning VLA (Akıl Yürütme Temelli VLA)** modellerinin doğmasına yol açmıştır[cite: 3].
 
@@ -71,7 +69,6 @@ Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\t
 * **Hava Manipülasyonu ve Çift Kol Entegrasyonu (DroneVLA, AIR-VLA, Flying Hand):** Hava araçlarının uçarken manipülatörle nesne yakalamasını sağlar. Flying Hand, tam tahrikli bir hekzarotor üzerine 4-DoF kol yerleştirerek ACT (Action Chunking with Transformers) yönteminin hava araçlarına uyarlanabileceğini kanıtlamıştır.
 * **Düşük Gecikmeli Görev Planlama (TypeFly, AeroAgent):** LLM'lerin serbest kod üretimindeki gecikmeyi azaltmak için modeli MiniSpec adı verilen yalın bir drone komut dilinde çıktı vermeye kısıtlayarak planlama gecikmesini 500 ms'nin altına indirmiştir.
 
-<img width="700" alt="UAV Pipeline ve Modeller" src="https://github.com/user-attachments/assets/uav-pipeline-placeholder" />
 
 ### Model Gruplarının Karşılaştırması
 
@@ -80,6 +77,8 @@ Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\t
 | **Bimanual (Çift Kol)** | ACT, $\pi_0$, Diffusion Policy | Eylem Parçalama (Chunking), Akış Eşleştirme | Yüksek (30–50 Hz) | 14+ DoF senkronizasyonu, nesne temas dinamiği |
 | **UAV (Drone)** | UAV-VLA, AerialVLA | İki Kademeli (Dual-System) Hızlı Başlıklar | Çok Yüksek (>50 Hz) | Milisaniyelik uçuş gecikmesi, rüzgâr/dinamik sapmalar |
 | **Genel / Melez** | OpenVLA, RT-2 | Otoregresif / Difüzyon Füzyonu | Düşük-Orta (5–15 Hz) | Geniş kavram dağarcığı, açık dünya sıfır örnekli transfer |
+
+
 
 ---
 

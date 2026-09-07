@@ -1,14 +1,43 @@
 # İnsansız Hava Araçlarında Geçmişten Günümüze Yazılım Teknolojileri ve Yazılım Mimarisi
 
+<div align="center">
+
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)]()
+[![Field](https://img.shields.io/badge/Field-UAVs_%26_Reasoning_VLA-blue.svg)]()
+[![Author](https://img.shields.io/badge/Author-Sueda_Zeynep_Demirtas-orange.svg)]()
+
+</div>
+
+## 📌 İçindekiler
+1. [Giriş ve Klasik Otonom Yaklaşımı](#1-giriş-ve-klasik-otonom-yaklaşımı)
+2. [VLA ve Reasoning VLA Mimarileri](#2-vla-ve-reasoning-vla-mimarileri)
+3. [Chain-of-Thought (CoT) ve Akıl Yürütme Modelleri](#3-chain-of-thought-cot-ve-akıl-yürütme-modelleri)
+4. [Akıl Yürütme Tabanlı VLA ve UAV Uygulamaları](#4-akıl-yürütme-tabanlı-vla-ve-uav-uygulamaları)
+5. [Kaynakça](#5-kaynakça)
+
+---
+
+## 1. Giriş ve Klasik Otonom Yaklaşımı
 Geçmişten günümüze insansız hava araçlarında kullanılan yazılım mimarilerinden ilki, perception (algılama), SLAM (Eş Zamanlı Konum Belirleme ve Haritalama), kontrol şeklinde 3 ayrı katmana bölünmüş klasik otonom yaklaşımıdır. Bu mimaride perception, sensörler aracılığı ile çevreyi algılayıp bu sensörlerin sağladığı ham veriyi işleyerek kullanılabilir hale getirir. Buna örnek olarak LiDAR sensöründen gelen ham nokta bulutlarının (point cloud) işlenerek kümelenmesi (clustering) ve çevredeki objelerin anlamlandırılması gibi görevler verilebilir. Bu örnek, perception katmanının en minimal işlerinden biridir. Derin öğrenmeye dayalı görüntü işleme ve bilgisayarlı görü teknolojilerinin hepsine bu katmanda yer veririz. Sözün özü, otonoma yapay zekanın dahil olduğu ilk katman burasıdır.
 
 Kontrol katmanı, üst düzey otonomi yazılımı ile fiziksel donanım arasındaki köprü görevini üstlenerek aracın dinamik hareketlerini yönetir. Kontrol katmanının tüm başarısı SLAM katmanına bağlıdır. Konumu yeterli doğruluk ile tespit edilemeyen cihazı, yeterli doğruluk ile kontrol etmek mümkün değildir. SLAM katmanının görevi olan state estimation ve EKF gibi algoritmalar üzerinden edinilen bilgiler üstüne inşa edilen kontrol katmanı pure pursuit, PID, MPC, NMPC gibi ağır matematiksel algoritmaları kullanarak otonom cihazı kontrol eder.
+
+<p align="center">
+  <img width="700" alt="Sensör ve Veri Girişi - Hesaplama - Araç Kontrolü Şeması" src="../assets/drone-sema-1.png">
+</p>
 
 Klasik otonomiden bu yana yaşanan en büyük değişimler, önce sadece perception katmanına yapay zekanın dahil olması, sonra ise adım adım ara katmanlara da yapay zekanın entegre edilmesidir. Tüm bu çalışmalar, otonom geliştiricileri tüm sistemi yapay zeka üstüne inşa etmeye itmiştir. SLAM katmanı her zaman sistemde kritik bir konumda bulunurken algılama, planlama ve kontrol süreçlerini tek bir potada eriten yeni modeller sahneye çıkmıştır. 
 
 Bununla birlikte, savunma sanayisi gibi otonom sistemlerden faydalanan kritik alanlarda 'sağlam matematik' ve klasik yöntemler hala ağırlıklı olarak tercih edilmektedir. Büyük bir yapay zeka modelinin yapabileceği en ufak bir hata veya göreceği bir halüsinasyon, göz ardı edilebilecek bir pürüz olmaktan çıkıp küresel ölçekte ciddi sorunlara yol açabilir. Taşıdığı bu riskler nedeniyle bazı endüstrilerde hala teoride veya laboratuvarda tutulan yapay zeka modelleri, diğer birçok alanda ise otonomi mutfağının en önemli baharatı haline gelmiştir. Görsel veriyi ve doğal dili işleyip doğrudan eyleme dönüştüren VLA (Vision-Language-Action) mimarisi, tam olarak bu baharatların en güçlülerinden biridir. Bu yazıda, fiziksel donanımımıza doğrudan temas etmesi ve dinamik karar mekanizmaları sunması nedeniyle odağımızı VLA modellerine çevireceğiz.
 
+---
+
+## 2. VLA ve Reasoning VLA Mimarileri
 VLA (vision-language-action), görsel algıyı, dil anlama yeteneğini ve eyleme geçmeyi birleştiren bir yapay zeka modelidir[cite: 2]. Bu yapılar, üst seviye görsel-dilsel muhakeme yeteneğini hassas eylem yörüngelerine dönüştürerek hareket planlama ve kontrol süreçlerine esneklik ile uygulanabilirlik kazandırır[cite: 3].
+
+<p align="center">
+  <img width="700" alt="COMPASS 7 Katmanlı Mimari ve Drone Sistemleri" src="../assets/drone-sema-2.png">
+</p>
 
 VLA'lerin otonom sürüşte yaygınlaşması; çok adımlı çıkarım süreçlerinin gerçek zamanlı yüksek frekanslı kontrolü kısıtlaması, farklı araç ve senaryolara genelleme yapabilecek geniş ölçekli veri eksikliği ve mevcut ince ayar stratejilerinin yetersizliği nedeniyle sekteye uğramaktadır. Bu noktada devreye Reasoning VLA yani akıl yürütme temelli VLA modelleri devreye girer[cite: 3].
 
@@ -37,7 +66,9 @@ Geleneksel dronelar sadece "görür ve kaçar" (Obstacle Avoidance). İlk nesil 
 
 Yukarıdaki tabloda geleneksel İHA sistemleri ve Reasoning / Agentic İHA sistemleri arasındaki fark büyük ölçüde ortaya konmuştur. Reasoning insansız hava araçlarının altında yatan yazılımsal mantığı derinlemesine incelemeden önce safkan, klasik VLA modellerini inceleyeceğiz ki çok daha doğru bir anlam haritası çizebilelim.
 
-### Chain-of-Thought (CoT)
+---
+
+## 3. Chain-of-Thought (CoT) ve Akıl Yürütme Modelleri
 Chain-of-Thought (CoT) yani "Düşünce Zinciri" yöntemi, modelin "sesli düşünmesini" ve ara akıl yürütme adımları oluşturmasını sağlayarak, büyük dil modellerinin (LLM) karmaşık ve çok aşamalı görevlerdeki performansını artıran bir istem mühendisliği tekniğidir.
 
 **Temel noktalar**
@@ -69,6 +100,8 @@ DeepSeek-R1, büyük ön eğitim maliyetlerine gerek kalmadan, yalnızca uygun �
 
 ---
 
+## 4. Akıl Yürütme Tabanlı VLA ve UAV Uygulamaları
+
 ### Çeşitli Akıl Yürütme Tabanlı VLA (Reasoning-VLA) Modelleri ve Mimari Yaklaşımlar
 Görsel-Dil-Eylem (VLA) literatüründe son dönemde öne çıkan en belirgin değişim, doğrudan algıla-eyleme dök eşlemesi yapan uçtan uca modellerden, karar sürecine açık ara basamaklar ekleyen akıl yürütme tabanlı mimarilere geçiştir. Bu doğrultuda geliştirilen modeller; ara planlama adımlarını modelleme biçimlerine, mekânsal algı entegrasyonlarına ve eylem üretim hızlarına göre farklı yaklaşımlar sergilemektedir[cite: 4].
 
@@ -80,14 +113,20 @@ Bu tür yüksek serbestlik dereceli ve hızlı sistemlerde, standart otoregresif
 
 Ayrıca bu alandaki güncel yaklaşımlar, farklı kinematik yapılardan ve sensör konfigürasyonlarından gelen verilerle ortak eğitim (cross-embodiment co-training) yapmanın model genellemesini ciddi ölçüde artırdığını göstermektedir. Üst seviyede semantik muhakeme ve rota planlaması yürüten "yavaş" bir görsel-dil omurgası ile alt seviyede milisaniyelik dinamik kararları icra eden "hızlı" bir politika başlığından oluşan iki kademeli (dual-system) mimariler; İHA'ların zorlu rüzgâr/uçuş dinamiklerinde güvenli, sağlam ve uyarlanabilir bir fiziksel yapay zekâ altyapısı sunmaktadır.
 
----
+<p align="center">
+  <img width="700" alt="myvla Pipeline ve Training Process Şeması" src="../assets/drone-sema-3.png">
+</p>
 
 ### İnsansız Hava Araçlarında (UAV / Drone) VLA ve Öğrenilmiş Kontrol Sistemleri
 Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\text{ Hz}$) ve dış mekânın 3 boyutlu dinamik koşulları altında uçuş komutları ve görev planlaması üretmektedir:
 
 * **Uçtan Uca Görsel-Dilsel Navigasyon (UAV-VLA, CognitiveDrone, RaceVLA):** UAV-VLA, uydu ve hava görüntülerini işleyerek doğal dilden 100 bin uçuşluk görev planı (irtifa, rota, sensör ayarları) üretebilmektedir. CognitiveDrone, birinci şahıs kamerasından doğrudan 4B eylem ($x, y, z, \text{yaw}$) üretirken; Düşünce Zinciri (CoT) muhakemesi eklenen R1 varyantıyla karmaşık bilişsel görevleri çözer. RaceVLA ise uzman pilot verilerini "agresif apeks dönüşü" gibi sözel komutlarla eşleyerek insan benzeri yarış yörüngeleri oluşturur.
-* **Hava Manipülasyonu ve Çift Kol Entegrasyonu (DroneVLA, AIR-VLA, Flying Hand):** Hava araçlarının yalnızca uçmayıp uçarken manipülatörle nesne yakalamasını sağlayan DroneVLA, açık sözlüklü nesne tespiti (Grounding DINO) ile görsel servoyu birleştirir. AIR-VLA, hava manipülasyonu için 3000 gösterimlik güvenlik kısıtlı bir test ortamı sunar. Flying Hand ise tam tahrikli bir hekzarotor üzerine 4-DoF robot kolu yerleştirerek, manipülasyonda kullanılan ACT (Action Chunking with Transformers) yönteminin doğrudan hava araçlarına aktarılabileceğini kanıtlamıştır. Ayrıca çift kollu hava manipülasyonu (Aerial Bimanual Harvesting), avokado hasadı gibi görevlerde bir kolun dalı sabitleyip diğer kolun meyveyi kopardığı lider-takipçi stratejisini başarıyla uygulamaktadır.
+* **Hava Manipülasyonu ve Çift Kol Entegrasyonu (DroneVLA, AIR-VLA, Flying Hand):** Hava araçlarının yalnızca uçmayıp uçarken manipülatörle nesne yakalamasını sağlayan DroneVLA, açık sözlüklü nesne tespiti (Grounding DINO) ile görsel servoyu birleştirir. AIR-VLA, hava manipülasyonu için 3000 gösterimlik güvenlik kısıtlı bir test ortamı sunar. Flying Hand ise tam tahrikli bir hekzarotor üzerine 4-DoF kol yerleştirerek, manipülasyonda kullanılan ACT (Action Chunking with Transformers) yönteminin doğrudan hava araçlarına aktarılabileceğini kanıtlamıştır. Ayrıca çift kollu hava manipülasyonu (Aerial Bimanual Harvesting), avokado hasadı gibi görevlerde bir kolun dalı sabitleyip diğer kolun meyveyi kopardığı lider-takipçi stratejisini başarıyla uygulamaktadır.
 * **Düşük Gecikmeli Görev Planlama (TypeFly, AeroAgent):** LLM'lerin serbest kod üretimindeki gecikmeyi azaltmak için TypeFly, modeli MiniSpec adı verilen yalın bir drone komut dilinde çıktı üretmeye kısıtlayarak planlama gecikmesini 500 ms'nin altına indirmiştir.
+
+<p align="center">
+  <img width="700" alt="Multi-Modal Sensing ve SLAM Navigasyon Akışı" src="../assets/drone-sema-4.png">
+</p>
 
 #### Model Gruplarının Karşılaştırması
 
@@ -99,7 +138,7 @@ Hava robotlarında VLA modelleri, milisaniyelik gecikme kısıtları ($\ge 100\t
 
 ---
 
-## Kaynakça
+## 5. Kaynakça
 [1] NVIDIA, "What is Reasoning VLA (Vision-Language-Action)?," NVIDIA Glossary, 2026. [Çevrimiçi]. Erişilebilir: https://www.nvidia.com/en-us/glossary/reasoning-vision-language-action/[cite: 1]
 
 [2] Exxact Corp., "Vision Language Action (VLA) Models Powering Robotics of Tomorrow," Exxact Blog, 23 Ekim 2025. [Çevrimiçi]. Erişilebilir: https://www.exxactcorp.com/blog/deep-learning/vision-language-action-vla-models-powers-robotics[cite: 2]
